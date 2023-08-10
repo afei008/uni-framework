@@ -4,7 +4,7 @@
     <view v-if="show" class="network-wrap">
         <view class="network-error">
             <view class="image">
-                <image class="img" :src="icon" />
+                <image class="img" :src="Icon" />
             </view>
             <view class="text">
                 <text>加载失败，</text>
@@ -14,33 +14,28 @@
     </view>
 </template>
 
-<script>
+<script setup lang="ts">
+import { watch } from 'vue';
 import Icon from './network-error.png';
 
-export default {
-    name: 'AfNetworkError',
-    props: {
-        show: {
-            type: Boolean,
-            default: false,
-        },
+const props = defineProps({
+    show: {
+        type: Boolean,
+        default: false,
     },
-    data() {
-        return {
-            icon: Icon,
-        };
-    },
-    watch: {
-        show(nv, ov) {
-            console.log(nv, ov);
-        },
-    },
-    methods: {
-        clickRetry() {
-            this.$emit('retry');
-        },
-    },
+});
+const emit = defineEmits(['retry']);
+
+const clickRetry = () => {
+    emit('retry');
 };
+
+watch(
+    () => props.show,
+    (nv) => {
+        console.log(nv);
+    }
+);
 </script>
 
 <style lang="scss" scoped>

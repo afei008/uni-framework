@@ -1,6 +1,7 @@
 /** @format */
 
 module.exports = {
+    root: true,
     env: {
         browser: true,
         es2021: true,
@@ -14,16 +15,18 @@ module.exports = {
         getApp: 'readonly',
     },
     extends: [
-        'eslint:recommended',
-        'plugin:vue/recommended',
+        'plugin:vue/vue3-essential',
+        'plugin:vue/vue3-strongly-recommended',
+        'plugin:vue/vue3-recommended',
         'airbnb-base',
-        'prettier',
-        'plugin:prettier/recommended',
+        'eslint:recommended',
+        '@vue/eslint-config-typescript/recommended',
+        '@vue/eslint-config-prettier',
     ],
-    parser: 'vue-eslint-parser',
     parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
+        parser: '@typescript-eslint/parser',
     },
     settings: {
         'import/resolver': {
@@ -32,7 +35,9 @@ module.exports = {
             },
         },
     },
+    plugins: ['prettier'],
     rules: {
+        'prettier/prettier': 'error',
         indent: 'off',
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
@@ -41,5 +46,17 @@ module.exports = {
         'no-param-reassign': 0,
         'no-console': 0,
         'import/no-unresolved': 0,
+        '@typescript-eslint/indent': ['error', 4],
+        '@typescript-eslint/ban-ts-comment': [
+            'warn',
+            {
+                'ts-expect-error': 'allow-with-description',
+                'ts-ignore': 'allow-with-description',
+                'ts-nocheck': 'allow-with-description',
+                'ts-check': 'allow-with-description',
+            },
+        ],
+        '@typescript-eslint/no-explicit-any': 0,
+        '@typescript-eslint/no-non-null-assertion': 0,
     },
 };

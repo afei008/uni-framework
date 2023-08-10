@@ -1,6 +1,6 @@
 {
-    "name" : "uni-test-v2",
-    "appid" : "__UNI__657AC12",
+    "name" : "uni-test",
+    "appid" : "__UNI__38C9934",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -50,7 +50,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wx30f2fa706781f7ff",
         "setting" : {
             "urlCheck" : false
         },
@@ -68,5 +68,5 @@
     "uniStatistics" : {
         "enable" : false
     },
-    "vueVersion" : "2"
+    "vueVersion" : "3"
 }

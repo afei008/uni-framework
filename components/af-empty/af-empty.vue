@@ -4,33 +4,26 @@
     <view class="empty-wrap" :style="{ height: height }">
         <view class="empty-main flex column ac jc">
             <view class="img-wrap">
-                <image :src="icon" class="img"></image>
+                <image :src="Icon" class="img"></image>
             </view>
             <view class="text-wrap"> {{ text }} </view>
         </view>
     </view>
 </template>
 
-<script>
+<script setup lang="ts">
 import Icon from './no-data.png';
 
-export default {
-    props: {
-        text: {
-            type: String,
-            default: '没有数据~',
-        },
-        height: {
-            type: String,
-            default: '400rpx',
-        },
+defineProps({
+    text: {
+        type: String,
+        default: '没有数据~',
     },
-    data() {
-        return {
-            icon: Icon,
-        };
+    height: {
+        type: String,
+        default: '400rpx',
     },
-};
+});
 </script>
 
 <style lang="scss" scoped>

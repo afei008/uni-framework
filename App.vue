@@ -1,23 +1,20 @@
 <!-- @format -->
 
-<script>
-import { mapActions } from 'vuex';
+<script lang="ts" setup>
+import { onLaunch, onShow, onHide } from '@dcloudio/uni-app';
+import useSystemStore from '@/store/modules/system/index';
 
-export default {
-    onLaunch() {
-        console.log('App Launch');
-        this.getSystemInfo();
-    },
-    onShow() {
-        console.log('App Show');
-    },
-    onHide() {
-        console.log('App Hide');
-    },
-    methods: {
-        ...mapActions('system', ['getSystemInfo']),
-    },
-};
+onLaunch(() => {
+    console.log('App Launch');
+    const systemStore = useSystemStore();
+    systemStore.getSystemInfo();
+});
+onShow(() => {
+    console.log('App Show');
+});
+onHide(() => {
+    console.log('App Hide');
+});
 </script>
 
 <style lang="scss">

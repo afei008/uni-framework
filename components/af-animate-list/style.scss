@@ -1,0 +1,46 @@
+/** @format */
+
+.animate-list {
+    height: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.anim {
+    transition: .5s;
+}
+
+.con {
+    position: relative;
+    top: 0;
+
+    &.top {
+        top: -78rpx;
+    }
+}
+
+.item {
+    box-sizing: border-box;
+    height: 68rpx;
+    padding: 10rpx;
+    margin: 10rpx 0;
+    overflow: hidden;
+    font-size: $size12;
+    background: linear-gradient(90deg, #e0e0e0 0, rgba(224, 224, 224, 0) 100%);
+    border-radius: 50rpx;
+
+    .img {
+        width: 48rpx;
+        height: 48rpx;
+        border-radius: 50%;
+    }
+
+    .name {
+        flex: none;
+        padding: 0 20rpx;
+    }
+
+    .content {
+        white-space: nowrap;
+    }
+}

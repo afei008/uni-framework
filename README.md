@@ -4,10 +4,10 @@
 
 |--api                      接口定义目录
 |--common
-|  |--mixins                公共 mixins，按需引入
-|     |--global.js          全局 mixin
-|     |--reachBottom.js     上拉加载更多的常用方法
-|  |--nav.js                页面跳转方法
+|  |--composables           公共 composables，按需引入
+|     |--loading.ts         loading 提示
+|     |--reachBottom.ts     上拉加载更多的常用方法
+|  |--nav.ts                页面跳转方法
 |--components               全局组件
 |--config                   项目配置文件
 |--http                     http封装
@@ -20,8 +20,8 @@
 |--storage                  本地存储
 |--store                    状态管理
 |  |--modules
-|     |--system.js          系统一些常用的数值，如安全区域，胶囊按钮等
-|     |--user.js            登录用户的信息
+|     |--system.ts          系统一些常用的数值，如安全区域，胶囊按钮等
+|     |--user.ts            登录用户的信息
 |--styles                   全局样式
 |--.eslintrc.js
 |--.prettierrc
@@ -31,6 +31,6 @@
 |--main.js
 |--manifest.json
 |--package.json
-|--permission.js            自定义路由跳转鉴权
+|--permission.ts            自定义路由跳转鉴权
 |--README.md
 |--uni.scss
