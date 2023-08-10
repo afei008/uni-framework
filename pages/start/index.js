@@ -3,9 +3,9 @@
 export default {
     methods: {
         clickTo(type) {
-            let url = '/pages/home/index-view/index';
+            let url = '/pages/home/main/main-page';
             if (type === 1) {
-                url = '/pages/login/index';
+                url = '/pages/login/login-page';
             }
             this.$navTo(url);
         },

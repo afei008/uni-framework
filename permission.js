@@ -4,7 +4,7 @@
 import store from '@/store';
 import router from '@/router/index';
 
-const whiteList = ['/pages/login/index', '/pages/app-start/index'];
+const whiteList = ['/pages/login/login-page', '/pages/start/start-page'];
 
 export default function checkPermission(url) {
     const userToken = store.state.user.token;

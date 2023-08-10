@@ -45,7 +45,7 @@ export function responseInterceptors(res) {
             console.log('未登录，关闭所有页面，跳转至登录页');
             uni.clearStorageSync();
             uni.reLaunch({
-                url: '/pages/login/index',
+                url: '/pages/login/login-page',
             });
             return;
         }

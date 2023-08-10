@@ -14,7 +14,7 @@
 import indexMixin from './index';
 
 export default {
-    name: 'AppStart',
+    name: 'StartPage',
     mixins: [indexMixin],
 };
 </script>

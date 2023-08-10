@@ -2,13 +2,13 @@
 
 const router = [
     {
-        path: '/pages/home/main/index',
+        path: '/pages/home/main/main-page',
         meta: {
             roles: ['admin', 'user'],
         },
     },
     {
-        path: '/pages/home/views/list/index',
+        path: '/pages/home/views/list/list-page',
         meta: {
             roles: ['admin', 'user'],
         },

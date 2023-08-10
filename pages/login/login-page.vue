@@ -11,7 +11,7 @@
 import { mapActions } from 'vuex';
 
 export default {
-    name: 'LoginIndex',
+    name: 'LoginPage',
     methods: {
         ...mapActions('user', ['login']),
         clickLogin() {

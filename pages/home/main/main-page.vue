@@ -23,7 +23,7 @@
 import indexMixin from './index';
 
 export default {
-    name: 'HomeIndex',
+    name: 'MainPage',
     mixins: [indexMixin],
 };
 </script>

@@ -1,19 +1,19 @@
 {
     "pages": [
         {
-            "path": "pages/app-start/index",
+            "path": "pages/start/start-page",
             "style": {
                 "navigationBarTitleText": ""
             }
         },
         {
-            "path": "pages/login/index",
+            "path": "pages/login/login-page",
             "style": {
                 "navigationBarTitleText": ""
             }
         },
         {
-            "path": "pages/home/main/index",
+            "path": "pages/home/main/main-page",
             "style": {
                 "navigationBarTitleText": ""
             }
@@ -24,7 +24,7 @@
             "root": "pages/home/views",
             "pages": [
                 {
-                    "path": "list/index"
+                    "path": "list/list-page"
                 }
             ]
         }

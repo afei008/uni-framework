@@ -7,7 +7,11 @@ export default {
         return {
             pageTitle: '首页',
             list: [
-                { id: 1, title: '列表页', url: '/pages/home/views/list/index' },
+                {
+                    id: 1,
+                    title: '列表页',
+                    url: '/pages/home/views/list/list-page',
+                },
             ],
         };
     },

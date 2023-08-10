@@ -26,7 +26,7 @@ const userStore = {
         async login({ commit }) {
             commit('SET_TOKEN', 'this is token');
             commit('SET_ROLE', 'admin');
-            lauTo('/pages/home/main/index');
+            lauTo('/pages/home/main/main-page');
         },
     },
 };
