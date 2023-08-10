@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('~@/static/font/iconfont.ttf') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: "\e645";
+}
+
+.icon-location:before {
+  content: "\e651";
+}
+
+.icon-roundcheckfill:before {
+  content: "\e656";
+}
+
+.icon-roundclosefill:before {
+  content: "\e658";
+}
+
+.icon-right:before {
+  content: "\e6a3";
+}
+
+.icon-home:before {
+  content: "\e6b8";
+}
+
+.icon-searchlist:before {
+  content: "\e6fe";
+}
+
+.icon-service:before {
+  content: "\e6ff";
+}
+
+.icon-hot:before {
+  content: "\e758";
+}
+
+.icon-triangledownfill:before {
+  content: "\e79b";
+}
+
+.icon-triangleupfill:before {
+  content: "\e79c";
+}
+
+.icon-search_light:before {
+  content: "\e7da";
+}
+
+.icon-message_light:before {
+  content: "\e7db";
+}
+
+.icon-phone_light:before {
+  content: "\e7fe";
+}
+

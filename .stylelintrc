@@ -1,0 +1,24 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-standard-scss",
+        "stylelint-config-recommended-scss",
+        "stylelint-config-recess-order"
+    ],
+    "rules": {
+        "number-leading-zero": "never",
+        "alpha-value-notation": null,
+        "color-function-notation": null,
+        "scss/no-global-function-names": null,
+        "no-descending-specificity": null,
+        "indentation": 4,
+        "string-quotes": "single",
+        "unit-no-unknown": [true, { "ignoreUnits": ["rpx"] }]
+    },
+    "overrides": [
+        {
+          "files": ["**/*.{vue,html}"],
+          "customSyntax": "postcss-html"
+        }
+    ]
+}

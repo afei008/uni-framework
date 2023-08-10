@@ -1,0 +1,36 @@
+/** @format */
+
+.network-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999999999999;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+
+.network-error {
+    display: inline-flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.img {
+    width: 280rpx;
+    height: 280rpx;
+}
+
+.text {
+    margin-top: 26rpx;
+    font-size: 28rpx;
+    color: #999;
+}
+
+.btn {
+    color: $primary;
+}

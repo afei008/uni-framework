@@ -1,0 +1,62 @@
+/** @format */
+
+// 常用变量
+// var(--window-top): 固定在顶部时，兼容 H5 时使用
+// var(--window-bottom): 固定在底部时，兼容 H5 时使用
+// env(safe-area-inset-bottom): 留出全面屏手机底部安全区域
+
+/* stylelint-disable-next-line selector-type-no-unknown */
+page {
+    color: $c3;
+}
+
+.img {
+    vertical-align: middle;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.tr {
+    text-align: right;
+}
+
+.ellipsis {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+
+    /* #ifndef H5 */
+    display: -webkit-box;
+
+    /* #endif */
+
+    /* #ifdef H5 */
+    width: 100%;
+
+    /* #endif */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+    /* #ifdef H5 */
+    white-space: nowrap;
+
+    /* #endif */
+
+    /* #ifndef H5 */
+    white-space: initial;
+
+    /* #endif */
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical !important;
+
+    &.two {
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+    }
+}

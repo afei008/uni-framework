@@ -1,0 +1,26 @@
+{
+    "devDependencies": {
+        "@dcloudio/types": "^3.0.20",
+        "eslint": "^8.28.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-vue": "^8.5.0",
+        "postcss": "^8.4.19",
+        "postcss-html": "^1.5.0",
+        "postcss-scss": "^4.0.6",
+        "prettier": "^2.8.0",
+        "stylelint": "^14.15.0",
+        "stylelint-config-recess-order": "^3.0.0",
+        "stylelint-config-recommended-scss": "^8.0.0",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-config-standard-scss": "^6.1.0",
+        "stylelint-scss": "^4.3.0",
+        "vue-eslint-parser": "^9.1.0"
+    },
+    "dependencies": {
+        "dayjs": "^1.11.6"
+    }
+}

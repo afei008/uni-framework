@@ -1,0 +1,39 @@
+{
+    "pages": [
+        {
+            "path": "pages/app-start/index",
+            "style": {
+                "navigationBarTitleText": ""
+            }
+        },
+        {
+            "path": "pages/login/index",
+            "style": {
+                "navigationBarTitleText": ""
+            }
+        },
+        {
+            "path": "pages/home/main/index",
+            "style": {
+                "navigationBarTitleText": ""
+            }
+        }
+    ],
+    "subPackages": [
+        {
+            "root": "pages/home/views",
+            "pages": [
+                {
+                    "path": "list/index"
+                }
+            ]
+        }
+    ],
+    "globalStyle": {
+        "navigationBarTextStyle": "black",
+        "navigationBarTitleText": "",
+        "navigationBarBackgroundColor": "#F8F8F8",
+        "backgroundColor": "#F8F8F8"
+    },
+    "uniIdRouter": {}
+}
